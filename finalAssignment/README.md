@@ -7,11 +7,27 @@ allowing the user to plot a scatter plot, choose the x and y axes variables,
 group the data by another variable, while plotting a regression line 
 (displaying its equation) and a simple residue plot.
 
-## Pitch Presentation
+## Quick Access
 
-A quick 5-slide pich presentation can be accessed with this link: 
+### Final Productis
 
-[ffrazatto.github.io/DevelopingDataProducts/finalAssignment/pitchPresentation.html](ffrazatto.github.io/DevelopingDataProducts/finalAssignment/pitchPresentation.html)
+- [Simple Data Explorer App]( https://ffrazatto.shinyapps.io/finalassignment/)
+
+- [Pitch Presentation](https://ffrazatto.github.io/DevelopingDataProducts//finalAssignment/pitchPresentation.html#1)
+
+### Files
+
+#### Presentation
+
+- [HTML File](https://github.com/ffrazatto/DevelopingDataProducts/blob/master/finalAssignment/pitchPresentation.html)
+- [R markdown File](https://github.com/ffrazatto/DevelopingDataProducts/blob/master/finalAssignment/pitchPresentation.Rmd)
+- [Image file](https://github.com/ffrazatto/DevelopingDataProducts/blob/master/finalAssignment/app_mtcars.png)
+
+#### Shiny App
+
+- [Server File](https://github.com/ffrazatto/DevelopingDataProducts/blob/master/finalAssignment/server.R)
+- [UI File](https://github.com/ffrazatto/DevelopingDataProducts/blob/master/finalAssignment/server.R)
+
 
 ## User Inputs
 
