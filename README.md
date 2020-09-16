@@ -17,9 +17,9 @@ Both the pitch presentation and shiny app files (server.R and ui.R) are stored i
 
 ### Exercises
 
-* [Plotly Demo](https://ffrazatto.github.io/DevelopingDataProducts/exercises/assignmentW3.html)
-
 * [Leaflet Demo](https://ffrazatto.github.io/DevelopingDataProducts/exercises/assignmentW2.html)
+
+* [Plotly Demo](https://ffrazatto.github.io/DevelopingDataProducts/exercises/assignmentW3.html)
 
 
 ### Final Assingment
@@ -27,5 +27,3 @@ Both the pitch presentation and shiny app files (server.R and ui.R) are stored i
 * [Simple Data Explorer App](https://ffrazatto.shinyapps.io/finalassignment/)
 
 * [Pitch Presentation](https://ffrazatto.github.io/DevelopingDataProducts//finalAssignment/pitchPresentation.html#1)
-
-
