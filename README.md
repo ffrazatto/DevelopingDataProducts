@@ -19,8 +19,8 @@ Both the pitch presentation and shiny app files (server.R and ui.R) are stored i
 
 ### Final Assingment
 
-[Simple Data Explorer App]( https://ffrazatto.shinyapps.io/finalassignment/)
+* [Simple Data Explorer App]( https://ffrazatto.shinyapps.io/finalassignment/)
 
-[Pitch Presentation](https://ffrazatto.github.io/DevelopingDataProducts//finalAssignment/pitchPresentation.html#1)
+* [Pitch Presentation](https://ffrazatto.github.io/DevelopingDataProducts//finalAssignment/pitchPresentation.html#1)
 
 
