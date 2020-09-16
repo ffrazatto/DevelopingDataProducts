@@ -1,0 +1,118 @@
+---
+title: "Plotly Demo"
+author: Felipe Frazatto
+date: "September 16, 2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Objective
+
+This presentation will use the `mtcars` data set to draw a graph with `ggplot`
+and a simple regression line and convert it to an interactive map with `plotly`.
+
+The idea is to show how easily one can convert a static graph to an interactive 
+one with `plotly` just by using the `ggplotly()` function.
+
+## Libraries
+
+```{r echo=TRUE, results='hide', message=FALSE}
+
+library(plotly)
+library(ggplot2)
+
+```
+
+## Code for the Graphs (1/3)
+
+The graphs will be displayed on the next slides.
+
+
+```{r echo=TRUE}
+
+# Labels
+
+gTitle = "Weight Influence on Fuel Economy"
+xTitle = "Weight [1000 lbs]"
+yTitle = "Miles per Gallon"
+
+```
+## Code for the Graphs (2/3)
+
+```{r echo=TRUE}
+
+# Generate ggplot graph
+gg <- ggplot(data = mtcars, aes(x = wt, y = mpg)) + 
+     geom_point() + 
+     geom_smooth(formula = y ~ x, method = "lm") +
+     labs(x = xTitle,
+          y = yTitle,
+          title = gTitle)
+
+# Convert previous plot to plotly
+gpc <- ggplotly(gg)
+
+```
+
+## Code for the Graphs (3/3)
+
+```{r echo=TRUE}
+
+# Generate plotly graph
+fit <- lm(mpg ~ wt, data = mtcars)
+
+gp <- plot_ly(data = mtcars, y = mpg, x = ~wt) %>% 
+     add_markers(y = ~mpg) %>% 
+     add_lines(x = ~wt, y = fitted(fit)) %>%
+     layout(title = gTitle,
+            scene = list(
+                 xaxis = list(title = xTitle),
+                 yaxis = list(title = yTitle)
+                 )
+     )
+
+```
+
+
+## Non Interactive plot with ggplot2
+
+```{r echo=TRUE}
+## ggplot
+gg
+
+```
+
+
+## Interactive plot with plotly
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# plotly
+gp
+
+```
+
+
+## Converted Plot: ggplot -> plotly
+
+```{r echo=TRUE}
+# plotly converted
+gpc
+
+```    
+
+
+## Conclusion
+
+* Both graphs are practically the same (aside from the interactive);
+* Easily switch between `ggplot` and `plotly`;
+* High quality images.
+
+If you don't know how to use `plotly` very well, you can safely use `ggplot` and
+convert the result with `ggplotly`.
+
+## That's all Folks
+
+Thanks
