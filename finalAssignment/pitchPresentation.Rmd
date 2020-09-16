@@ -9,13 +9,6 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Motivation
-
-- Speedup data exploration;
-- Quickly plot graphs;
-- Overall pre analysis simplification;
-
-
 
 ## App Objectives
 
@@ -46,16 +39,6 @@ with the following code.
 ```
 
 
-## Data set: MTCars
-
-Here is a brief mtcars data set summary.
-
-```{r , echo = TRUE}
-
-str(mtcars)
-
-```
-
 ## App UI
 
 <center>![](app_mtcars.png){width=60%}</center>
@@ -63,9 +46,13 @@ str(mtcars)
 
 ## Links
 
-github: [https://github.com/ffrazatto/DevelopingDataProducts](https://github.com/ffrazatto/DevelopingDataProducts)
+[Github Project Page](https://github.com/ffrazatto/DevelopingDataProducts)
 
-app: [https://github.com/ffrazatto/DevelopingDataProducts](https://github.com/ffrazatto/DevelopingDataProducts)
+[Simple Data Explorer]( https://ffrazatto.shinyapps.io/finalassignment/)
+
+[This Presentation](https://ffrazatto.github.io/DevelopingDataProducts//finalAssignment/pitchPresentation.html#1)
+
+
 
 
 
