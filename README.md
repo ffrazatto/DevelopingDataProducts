@@ -13,7 +13,7 @@ The assignments are stored in this folder: [exercises](https://github.com/ffraza
 
 Both the pitch presentation and shiny app files (server.R and ui.R) are stored in this folder: [finalAssignment](https://github.com/ffrazatto/DevelopingDataProducts/tree/master/finalAssignment)
 
-## Important links
+## Important Links
 
 ### Exercises
 
