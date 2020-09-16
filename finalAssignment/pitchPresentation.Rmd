@@ -1,0 +1,72 @@
+---
+title: "Simple Data Explorer"
+output: ioslides_presentation
+author: Felipe Frazatto
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Motivation
+
+- Speedup data exploration;
+- Quickly plot graphs;
+- Overall pre analysis simplification;
+
+
+
+## App Objectives
+
+- Quick explore MTCars data set;
+- Find relations between variables;
+- Simple linear regression model (one regressor);
+- Simple Residue Analysis
+
+## Data set: MTCars
+
+- `r dim(mtcars)[1]` Observations;
+- `r dim(mtcars)[2]` Variables;
+
+
+Since the app objective is to speedup and simplify data exploration, it is 
+recommended that the user first read the variables description and than 
+explore the data or vise versa, <span style= "color:red;">although not reading 
+the data set description may lead to hasty conclusions. </span>
+
+R help has a succinct explanation for each variable that can be easily accessed 
+with the following code.
+
+
+```{r echo=TRUE, eval=FALSE}
+
+?mtcars
+
+```
+
+
+## Data set: MTCars
+
+Here is a brief mtcars data set summary.
+
+```{r , echo = TRUE}
+
+str(mtcars)
+
+```
+
+## App UI
+
+<center>![](app_mtcars.png){width=60%}</center>
+<center>Data Exploration App User Interface</center>
+
+## Links
+
+github: [https://github.com/ffrazatto/DevelopingDataProducts](https://github.com/ffrazatto/DevelopingDataProducts)
+
+app: [https://github.com/ffrazatto/DevelopingDataProducts](https://github.com/ffrazatto/DevelopingDataProducts)
+
+
+
+
