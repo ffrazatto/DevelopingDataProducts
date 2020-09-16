@@ -1,0 +1,47 @@
+---
+title: "Leaflet Demo"
+author: Felipe Frazatto
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=FALSE}
+
+library(leaflet)
+
+
+lat <- c(-22.817471, 
+         -22.815763,
+         -22.814982,
+         -22.815227,
+         -22.815348,
+         -22.818772)
+
+lon <- c(-47.067481,
+         -47.067779,
+         -47.068220,
+         -47.069204,
+         -47.069979,
+         -47.069305)
+
+
+markersNames <- c("IFGW",
+                  "IMECC", 
+                  "IFCH",
+                  "IEL",
+                  "IA",
+                  "IB")
+
+leaflet() %>% addTiles() %>%
+  addMarkers(lat = lat, lng = lon, label = markersNames,
+    options = popupOptions(closeButton = FALSE))
+
+
+```
+These are some of University of Campinas (UNICAMP) institutes.
+
+For more information access their site: [UNICAMP](https://www.unicamp.br/unicamp/)
