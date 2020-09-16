@@ -12,4 +12,4 @@ Rmarkdown webpage with an interactive `leaflet` map.
 
 Rmarkdown presentation with an interactive `plotly` graph.
 
-* [Plotly Demo](ffrazatto.github.io/DevelopingDataProducts/exercises/assignmentW3.html)
+* [Plotly Demo](https://ffrazatto.github.io/DevelopingDataProducts/exercises/assignmentW3.html)
